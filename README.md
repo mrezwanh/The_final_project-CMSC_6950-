@@ -1,6 +1,6 @@
 # The_final_project-CMSC_6950
 # Data Analysis of Historical Weather Data
-**Project Overview:**
+## **Project Overview:**
 
 This project analyzes historical weather data to explore trends, identify extreme values, and generate insights using Python. The dataset includes daily weather records (maximum, minimum, and mean temperatures) from 2020 to 2024.
 
@@ -56,7 +56,7 @@ The dataset includes:
 ## **How to Reproduce**
 ### **Prerequisites**
 - Python 3.8 or later
-- Required libraries: `numpy`, `pandas`, `matplotlib`, 'glob'
+- Required libraries: `numpy`, `pandas`, `matplotlib`, `glob`
 
 Install the dependencies:
 ```bash
