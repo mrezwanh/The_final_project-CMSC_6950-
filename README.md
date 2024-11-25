@@ -57,7 +57,3 @@ The dataset includes:
 ### **Prerequisites**
 - Python 3.8 or later
 - Required libraries: `numpy`, `pandas`, `matplotlib`, `glob`
-
-Install the dependencies:
-```bash
-pip install -r requirements.txt
