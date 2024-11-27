@@ -1,0 +1,63 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Combine data from multiple files
+files = [
+    'en_climate_daily_NL_8403505_2020_P1D.csv',
+    'en_climate_daily_NL_8403505_2021_P1D.csv',
+    'en_climate_daily_NL_8403505_2022_P1D.csv',
+    'en_climate_daily_NL_8403505_2023_P1D.csv',
+    'en_climate_daily_NL_8403505_2024_P1D.csv'
+]
+
+# Load and combine all files
+dataframes = [pd.read_csv(file) for file in files]
+combined_data = pd.concat(dataframes, ignore_index=True)
+
+# Convert Date/Time column to datetime
+combined_data['Date/Time'] = pd.to_datetime(combined_data['Date/Time'])
+
+# Add Year and Month columns
+combined_data['Year'] = combined_data['Date/Time'].dt.year
+combined_data['Month'] = combined_data['Date/Time'].dt.month
+
+# Filter for required columns
+required_data = combined_data[['Year', 'Month', 'Max Temp (°C)', 'Min Temp (°C)']]
+
+# Group by Year and Month to find extreme temperatures
+monthly_extremes = required_data.groupby(['Year', 'Month']).agg(
+    Monthly_Max=('Max Temp (°C)', 'max'),
+    Monthly_Min=('Min Temp (°C)', 'min')
+).reset_index()
+
+# Predict 2025 temperatures by averaging previous years' data
+predicted_2025 = monthly_extremes[monthly_extremes['Year'] != 2025].groupby('Month').agg(
+    Predicted_Max=('Monthly_Max', 'mean'),
+    Predicted_Min=('Monthly_Min', 'mean')
+).reset_index()
+
+# Add labels for plotting
+predicted_2025['Month_Label'] = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+]
+
+# Plot maximum and minimum predicted temperatures
+plt.figure(figsize=(12, 6))
+plt.plot(predicted_2025['Month_Label'], predicted_2025['Predicted_Max'], label='Predicted Max Temp (°C)', color='red', marker='o')
+plt.plot(predicted_2025['Month_Label'], predicted_2025['Predicted_Min'], label='Predicted Min Temp (°C)', color='blue', marker='o')
+plt.fill_between(predicted_2025['Month_Label'], 
+                 predicted_2025['Predicted_Max'], 
+                 predicted_2025['Predicted_Min'], 
+                 color='gray', alpha=0.2, label='Range')
+
+# Customize the plot
+plt.title("Predicted Maximum and Minimum Temperatures for 2025 by Month", fontsize=16)
+plt.xlabel("Month", fontsize=14)
+plt.ylabel("Temperature (°C)", fontsize=14)
+plt.legend(fontsize=12)
+plt.grid(linestyle='--', alpha=0.6)
+plt.tight_layout()
+plt.savefig('CMSC_6950(5).jpg', format='jpg')
+
+plt.show()
