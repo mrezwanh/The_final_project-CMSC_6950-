@@ -125,7 +125,6 @@ for year in years:
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.legend(fontsize=12)
     plt.tight_layout()
-    plt.savefig(f'Temperature Distribution for {year}.jpg', format='jpg')
     plt.show()
 
 # Print Extreme Points for All Years
