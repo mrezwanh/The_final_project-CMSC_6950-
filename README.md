@@ -127,7 +127,7 @@ for year in years:
     plt.tight_layout()
     plt.show()
 
-# Print Extreme Points for All Years
+    # Print Extreme Points for All Years
 print("\nExtreme Points for Each Year:")
 for year, extremes in extreme_points.items():
     print(f"{year}: Max Temp = {extremes['Max Temp']}°C, Min Temp = {extremes['Min Temp']}°C")
