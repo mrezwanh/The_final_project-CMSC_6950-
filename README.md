@@ -84,6 +84,11 @@ Run the Python script to generate the plots and compute extreme temperature valu
 ### 5. View the Outputs
 The program generates the following outputs:
  * Represent several types of plot for fonding extreme value and predected temperatures and distributions.
- * A combined CSV file named `combined_data.csv` contain all data, `4.1 extreme_temperatures.csv` contain extreme trmperatures value from 2020 to 2024 and also `4.2 predicted_2025_temperatures.csv` contain predicted data. 
+ * A combined CSV file named `combined_data.csv` contain all data, `4.1 extreme_temperatures.csv` contain extreme trmperatures value from 2020 to 2024 and also `4.2 predicted_2025_temperatures.csv` contain predicted data.
+
+### 6. Modify as Needed
+You can customize the script by:
+ * Changing the file path pattern to match your dataset.
+ * Updating the grid layout dimensions or visualization parameters in the code.
 
 
