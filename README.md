@@ -62,5 +62,16 @@ The dataset includes:
 ### 1. Clone the Repository
 ### 2. Install Dependencies
 Make sure you have Python installed (preferably version 3.8 or higher). Install the required Python packages
--using `pip`:
+*use `pip`
+### 3. Prepare the Data
+Ensure you have the required climate data files in CSV format.
+The dataset includes:
+- `en_climate_daily_NL_8403505_2020_P1D.csv`
+- `en_climate_daily_NL_8403505_2021_P1D.csv`
+- `en_climate_daily_NL_8403505_2022_P1D.csv`
+- `en_climate_daily_NL_8403505_2023_P1D.csv`
+- `en_climate_daily_NL_8403505_2024_P1D.csv`
+### 4. Run the Script
+Run the Python script to generate the plots and compute extreme temperature values:
+
 
