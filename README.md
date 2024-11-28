@@ -73,6 +73,13 @@ The dataset includes:
 - `en_climate_daily_NL_8403505_2024_P1D.csv`
 ### 4. Run the Script
 Run the Python script to generate the plots and compute extreme temperature values:
-At first I run `0.0 main_analysis.py' for finding Line and Bar Graph of Maximum, Minimum, and Mean Temperatures (2020 to 2024)
+
+* `0.0 main_analysis.py' for finding Line and Bar Graph of Mean Temperatures and frequency distribution from 2020 to 2024.
+* `1. Max_Min_Mean_Temp_(2024).py` for finding Combined Temperature Data (2024).
+* `2. Line Graph of Extreme Temperatures_2024.py` fir finding extreme temperature for 2024.
+* `3. cumulative_and_polygon_2024.py` for illustrate the cumulative frequency of temperatures and The Frequency Polygon line with markers to represent the frequency distribution of temperatures.
+* `4. Extreme Temperatures_and_Predicted Temperatures.py` for finding Monthly Maximum and Minimum Temperatures Across Years (2020–2024) and Predicted Temperatures for 2025 (in `csv and jpg`).
+*  `5. Monthly Mean Temperatures (Actual vs Predicted for 2025).py`  shows The line graph of the monthly mean temperatures for several years, including a predicted trend for 2025.
+*  `6. Predicted_area_2025` represent Predicted Range (Maximum and Minimum) of Temperatures for 2025.
 
 
