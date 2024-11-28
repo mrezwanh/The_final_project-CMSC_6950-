@@ -81,5 +81,9 @@ Run the Python script to generate the plots and compute extreme temperature valu
 * `4. Extreme Temperatures_and_Predicted Temperatures.py` for finding Monthly Maximum and Minimum Temperatures Across Years (2020–2024) and Predicted Temperatures for 2025 (in `csv and jpg`).
 *  `5. Monthly Mean Temperatures (Actual vs Predicted for 2025).py`  shows The line graph of the monthly mean temperatures for several years, including a predicted trend for 2025.
 *  `6. Predicted_area_2025` represent Predicted Range (Maximum and Minimum) of Temperatures for 2025.
+### 5. View the Outputs
+The program generates the following outputs:
+ * Represent several types of plot for fonding extreme value and predected temperatures and distributions.
+ * A combined CSV file named `combined_data.csv` contain all data, `4.1 extreme_temperatures.csv` contain extreme trmperatures value from 2020 to 2024 and also `4.2 predicted_2025_temperatures.csv` contain predicted data. 
 
 
