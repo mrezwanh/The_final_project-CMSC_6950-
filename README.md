@@ -74,7 +74,7 @@ The dataset includes:
 ### 4. Run the Script
 Run the Python script to generate the plots and compute extreme temperature values:
 
-* `0.0 main_analysis.py' for finding Line and Bar Graph of Mean Temperatures and frequency distribution from 2020 to 2024.
+* `0.0 main_analysis.py` for finding Line and Bar Graph of Mean Temperatures and frequency distribution from 2020 to 2024.
 * `1. Max_Min_Mean_Temp_(2024).py` for finding Combined Temperature Data (2024).
 * `2. Line Graph of Extreme Temperatures_2024.py` fir finding extreme temperature for 2024.
 * `3. cumulative_and_polygon_2024.py` for illustrate the cumulative frequency of temperatures and The Frequency Polygon line with markers to represent the frequency distribution of temperatures.
