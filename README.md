@@ -49,7 +49,7 @@ The dataset includes:
    - Compare data points exceeding historical means.
 
 4. **Prediction**:
-   - Forecast November 2024 mean temperature using weighted averages of prior years (2020–2023).
+   - Forecast maximum, minimum and mean temperature of 2015 using weighted averages of prior years (2020–2024).
 
 ---
 
