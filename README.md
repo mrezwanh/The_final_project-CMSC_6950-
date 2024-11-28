@@ -73,5 +73,6 @@ The dataset includes:
 - `en_climate_daily_NL_8403505_2024_P1D.csv`
 ### 4. Run the Script
 Run the Python script to generate the plots and compute extreme temperature values:
+At first I run `0.0 main_analysis.py' for finding Line and Bar Graph of Maximum, Minimum, and Mean Temperatures (2020 to 2024)
 
 
