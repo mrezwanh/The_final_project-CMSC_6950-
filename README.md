@@ -59,4 +59,8 @@ The dataset includes:
 - Required libraries: `numpy`, `pandas`, `matplotlib`, `glob`
 
 - To reproduce the results, follow these steps
-- ###1. Clone the Repository
+### 1. Clone the Repository
+### 2. Install Dependencies
+Make sure you have Python installed (preferably version 3.8 or higher). Install the required Python packages
+-using `pip`:
+
