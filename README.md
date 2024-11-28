@@ -57,3 +57,6 @@ The dataset includes:
 ### **Prerequisites**
 - Python 3.10 or later
 - Required libraries: `numpy`, `pandas`, `matplotlib`, `glob`
+
+- To reproduce the results, follow these steps
+- ###1. Clone the Repository
